@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Сайт-візитка CompanyName</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <nav class="navigation">
+      <ul class="navigation-list">
+        <li data-target="services">Наші послуги</li>
+        <li data-target="why-us">Чому саме ми?</li>
+        <li data-target="advantages">Переваги</li>
+        <li data-target="reviews">Відгуки</li>
+        <li data-target="about">Про нас</li>
+        <li data-target="contacts">Контакти</li>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <div class="site">
+        <header class="header">
+          <div class="branding">
+            <div class="logo">CompanyName</div>
+            <div class="tagline">
+              Ваш успіх - наш пріоритет. Ми створюємо майбутнє вже сьогодні.
+            </div>
+            <div class="address">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>вул. Шолуденка, 3, Київ, 04116</span>
+              <div class="copy-tooltip">Скопіювати</div>
+            </div>
+          </div>
+          <div class="contacts">
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+              <span class="phone"
+                >(044) 123-45-67
+                <div class="copy-tooltip">Скопіювати</div>
+              </span>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <span class="email"
+                >info@example.com
+                <div class="copy-tooltip">Скопіювати</div>
+              </span>
+            </div>
+            <div class="socials">
+              <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" title="Telegram"
+                ><i class="fab fa-telegram-plane"></i
+              ></a>
+              <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+          </div>
+        </header>
+
+        <main class="main-content">
+          <div class="section" id="services">
+            <h2>Наші послуги</h2>
+
+            <div class="services-grid">
+              <div class="service-card">
+                <div class="service-image">
+                  <img
+                    src="./assets/services/room.jpg"
+                    alt="[Фото для оцінки нерухомості]"
+                  />
+                </div>
+                <div class="service-content">
+                  <h3 class="service-title">
+                    Оцінка Квартири, Будинку, Офіса, Приміщення, Кімнати
+                  </h3>
+                  <p>Для оцінки потрібно:</p>
+                  <ul class="service-docs">
+                    <li>Документи, що підтверджують право власності</li>
+                    <li>Технічний паспорт БТІ</li>
+                    <li>Копія паспорта (1-а, 2-а стор.)</li>
+                  </ul>
+                  <div class="service-price">від 200 грн.</div>
+                  <a href="#" class="service-button">Замовити оцінку</a>
+                </div>
+              </div>
+
+              <div class="service-card">
+                <div class="service-image">
+                  <img
+                    src="./assets/services/land.jpg"
+                    alt="[Фото для оцінки земельних ділянок]"
+                  />
+                </div>
+                <div class="service-content">
+                  <h3 class="service-title">Оцінка земельних ділянок</h3>
+                  <p>Для оцінки потрібно:</p>
+                  <ul class="service-docs">
+                    <li>
+                      Витяг із земельного кадастру або державний акт про право
+                      власності на землю
+                    </li>
+                    <li>Копія паспорта (1-а, 2-а стор.)</li>
+                  </ul>
+                  <div class="service-price">від 200 грн.</div>
+                  <a href="#" class="service-button">Замовити оцінку</a>
+                </div>
+              </div>
+
+              <div class="service-card">
+                <div class="service-image">
+                  <img
+                    src="./assets/services/document.jpg"
+                    alt="[Фото для техпаспорта БТІ]"
+                  />
+                </div>
+                <div class="service-content">
+                  <h3 class="service-title">Техпаспорт БТІ</h3>
+                  <p>Необхідні документи:</p>
+                  <ul class="service-docs">
+                    <li>Документи, що підтверджують право власності.</li>
+                    <li>Копія паспорта (1-а, 2-а та 11-а стор.)</li>
+                  </ul>
+                  <div class="service-price">від 1500 грн.</div>
+                  <a href="#" class="service-button">Замовити оцінку</a>
+                </div>
+              </div>
+
+              <div class="service-card">
+                <div class="service-image">
+                  <img
+                    src="./assets/services/house.jpg"
+                    alt="[Фото для приватизації нерухомості]"
+                  />
+                </div>
+                <div class="service-content">
+                  <h3 class="service-title">Приватизація нерухомості</h3>
+                  <p>Необхідні документи:</p>
+                  <ul class="service-docs">
+                    <li>Копія ордера, завірена в ЖЕКу</li>
+                    <li>Копії паспортів та ідент. кодів всіх прописаних.</li>
+                    <li>Довіреності від прописаних.</li>
+                    <li>Інформація, про приписку з 1992 року.</li>
+                  </ul>
+                  <div class="service-price">Договірна</div>
+                  <a href="#" class="service-button">Замовити оцінку</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="section whyUs" id="why-us">
+            <div>
+              <h2 style="color: #b10000">Без нас</h2>
+              <ul class="reason-list">
+                <li class="reason">
+                  <i class="fa-solid fa-xmark" style="color: #b10000"></i>
+                  Нескінченні черги
+                </li>
+                <li class="reason">
+                  <i class="fa-solid fa-xmark" style="color: #b10000"></i>
+                  Підготовка і заповнення незрозумілих документів
+                </li>
+                <li class="reason">
+                  <i class="fa-solid fa-xmark" style="color: #b10000"></i>
+                  Створення проблемних і безвихідних ситуацій
+                </li>
+                <li class="reason">
+                  <i class="fa-solid fa-xmark" style="color: #b10000"></i>
+                  Обстеження об’єкта в зручний для фахівця час
+                </li>
+                <li class="reason">
+                  <i class="fa-solid fa-xmark" style="color: #b10000"></i>
+                  Відсутність гарантії на отримання результату
+                </li>
+                <li class="reason">
+                  <i class="fa-solid fa-xmark" style="color: #b10000"></i>
+                  Відсутність гарантії на отримання результату
+                </li>
+                <li class="reason">
+                  <i class="fa-solid fa-xmark" style="color: #b10000"></i>
+                  Складний багатоетапний процес, який забирає багато часу і сил
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h2 style="color: #14ac00">З нами</h2>
+              <ul class="reason-list">
+                <li class="reason">
+                  <i class="fa-solid fa-check" style="color: #14ac00"></i
+                  >Консультації та оформлення заявок в телефонному режимі
+                </li>
+                <li class="reason">
+                  <i class="fa-solid fa-check" style="color: #14ac00"></i>Точний
+                  і мінімальний перелік необхідних документів
+                </li>
+                <li class="reason">
+                  <i class="fa-solid fa-check" style="color: #14ac00"></i
+                  >Зустрічі та переговори у зручний для замовника час
+                </li>
+                <li class="reason">
+                  <i class="fa-solid fa-check" style="color: #14ac00"></i>Ніяких
+                  додаткових оплат
+                </li>
+                <li class="reason">
+                  <i class="fa-solid fa-check" style="color: #14ac00"></i
+                  >Безкоштовна юридична консультація
+                </li>
+                <li class="reason">
+                  <i class="fa-solid fa-check" style="color: #14ac00"></i>Ніяких
+                  нервів, кілька годин часу і професійно оформлені документи
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="section" id="advantages">
+            <h2>Наші переваги</h2>
+            <ul>
+              <li>Висока якість виконання робіт</li>
+              <li>Інноваційні підходи до вирішення задач</li>
+              <li>Дотримання строків</li>
+              <li>Конкурентні ціни</li>
+              <li>Технічна підтримка після завершення проекту</li>
+              <li>Індивідуальний підхід до кожного клієнта</li>
+            </ul>
+          </div>
+
+          <h2>Відгуки наших клієнтів</h2>
+
+          <div class="reviews-container" id="reviews">
+            <div class="reviews-scroll">
+              <div class="review-card">
+                <img
+                  src="https://randomuser.me/api/portraits/men/11.jpg"
+                  alt="Іван Петренко"
+                  class="review-img"
+                />
+                <p class="review-text">
+                  "Компанія виконала роботу вчасно та якісно. Ми задоволені
+                  результатом та обов'язково звернемося ще раз."
+                </p>
+                <p class="review-author">- Іван Петренко</p>
+              </div>
+
+              <div class="review-card">
+                <img
+                  src="https://randomuser.me/api/portraits/women/12.jpg"
+                  alt="Олена Сидорова"
+                  class="review-img"
+                />
+                <p class="review-text">
+                  "Професійний підхід, креативні рішення та відповідальне
+                  виконання зобов'язань. Рекомендую!"
+                </p>
+                <p class="review-author">- Олена Сидорова</p>
+              </div>
+
+              <div class="review-card">
+                <img
+                  src="https://randomuser.me/api/portraits/men/12.jpg"
+                  alt="Петро Іваненко"
+                  class="review-img"
+                />
+                <p class="review-text">
+                  "Вражаюча якість обслуговування. Персонал дуже уважний до
+                  деталей та потреб клієнта."
+                </p>
+                <p class="review-author">- Петро Іваненко</p>
+              </div>
+
+              <div class="review-card">
+                <img
+                  src="https://randomuser.me/api/portraits/women/14.jpg"
+                  alt="Марія Коваленко"
+                  class="review-img"
+                />
+                <p class="review-text">
+                  "Швидко, якісно та за доступною ціною. Залишилися дуже
+                  задоволені співпрацею з цією компанією."
+                </p>
+                <p class="review-author">- Марія Коваленко</p>
+              </div>
+
+              <div class="review-card">
+                <img
+                  src="https://randomuser.me/api/portraits/men/15.jpg"
+                  alt="Андрій Шевченко"
+                  class="review-img"
+                />
+                <p class="review-text">
+                  "Велике спасибі за якісно виконану роботу. Всі умови були
+                  дотримані, дедлайни виконані."
+                </p>
+                <p class="review-author">- Андрій Шевченко</p>
+              </div>
+
+              <div class="review-card">
+                <img
+                  src="https://randomuser.me/api/portraits/women/1.jpg"
+                  alt="Наталія Бойко"
+                  class="review-img"
+                />
+                <p class="review-text">
+                  "Результат перевершив всі мої очікування! Професіонали
+                  найвищого рівня. Дякую!"
+                </p>
+                <p class="review-author">- Наталія Бойко</p>
+              </div>
+            </div>
+
+            <div class="scroll-buttons">
+              <button class="scroll-btn" onclick="scrollReviews(-300)">
+                ← Попередні
+              </button>
+              <button class="scroll-btn" onclick="scrollReviews(300)">
+                Наступні →
+              </button>
+            </div>
+          </div>
+
+          <section class="about-section" id="about">
+            <div class="about-content">
+              <h2>Про нашу компанію</h2>
+              <p>
+                Ми – професійна оціночна компанія, яка спеціалізується на
+                експертній оцінці майна різного типу та призначення. Наша
+                команда складається з кваліфікованих експертів-оцінювачів з
+                багаторічним досвідом роботи у сфері оцінки нерухомості,
+                транспорту, обладнання та бізнесу.
+              </p>
+
+              <div class="mission-block">
+                <p>
+                  Наша місія – надавати клієнтам точні, обґрунтовані та
+                  незалежні оціночні висновки, що відповідають міжнародним
+                  стандартам та вимогам українського законодавства.
+                </p>
+              </div>
+
+              <p>
+                Ми розуміємо, що кожен клієнт має унікальні потреби, тому
+                пропонуємо індивідуальний підхід до кожного завдання. Наші звіти
+                визнаються банками, страховими компаніями, державними органами
+                та судами.
+              </p>
+
+              <div class="values-list">
+                <div class="value-item">
+                  <h3>Професійність</h3>
+                  <p>
+                    Наші експерти мають відповідні сертифікати та постійно
+                    підвищують кваліфікацію
+                  </p>
+                </div>
+                <div class="value-item">
+                  <h3>Точність</h3>
+                  <p>
+                    Використовуємо сучасні методики розрахунків та перевірені
+                    дані
+                  </p>
+                </div>
+                <div class="value-item">
+                  <h3>Відкритість</h3>
+                  <p>
+                    Прозорість процесу оцінки та детальне обґрунтування
+                    результатів
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="about-image">
+              Експертна оцінка майна<br />з 2010 року
+            </div>
+          </section>
+
+          <section class="contact-section" id="contacts">
+            <h2>Наші контакти</h2>
+
+            <div class="contact-info">
+              <div class="info-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <div class="info-content">
+                  <h3>Адреса</h3>
+                  <p>вул. Шолуденка, 3, Київ, 04116</p>
+                </div>
+              </div>
+
+              <div class="info-item">
+                <i class="fas fa-phone"></i>
+                <div class="info-content">
+                  <h3>Телефон</h3>
+                  <p>(044) 123-45-67</p>
+                  <p>(067) 123-45-67</p>
+                </div>
+              </div>
+
+              <div class="info-item">
+                <i class="fas fa-envelope"></i>
+                <div class="info-content">
+                  <h3>Email</h3>
+                  <p>info@expert-ocinka.com.ua</p>
+                  <p>office@expert-ocinka.com.ua</p>
+                </div>
+              </div>
+
+              <div class="info-item">
+                <i class="fas fa-clock"></i>
+                <div class="info-content">
+                  <h3>Години роботи</h3>
+                  <p>Понеділок - П'ятниця: 9:00 - 18:00</p>
+                  <p>Субота: 10:00 - 15:00</p>
+                  <p>Неділя: вихідний</p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </main>
+
+        <footer class="footer">
+          <p>© 2025 CompanyName. Всі права захищені.</p>
+        </footer>
+      </div>
+    </div>
+
+    <div class="copy-notification" id="copyNotification">
+      <i class="fas fa-check-circle"></i>
+      <span>Скопійовано!</span>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
