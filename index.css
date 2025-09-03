@@ -120,7 +120,6 @@ body {
   -webkit-text-fill-color: transparent;
   color: #3498db;
   display: inline-block;
-  animation: colorShift 8s infinite alternate;
 }
 
 .tagline {
