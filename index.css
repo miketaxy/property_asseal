@@ -748,6 +748,8 @@ button:hover {
   }
 }
 
+/* Додайте ці стилі в кінець вашого CSS файлу */
+
 @media (max-width: 900px) {
   .header {
     flex-direction: column;
@@ -762,11 +764,13 @@ button:hover {
   .navigation-list {
     flex-wrap: wrap;
     gap: 10px;
+    justify-content: center;
   }
 
   .navigation-list li {
     font-size: 14px;
     padding: 8px 12px;
+    white-space: nowrap; /* Запобігає переносу пунктів меню */
   }
 
   .services-grid {
@@ -775,52 +779,249 @@ button:hover {
 
   .whyUs {
     flex-direction: column;
+    gap: 30px;
+  }
+
+  /* Перенос тексту в списках */
+  .section ul li,
+  .reason-list li,
+  .service-docs li {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    text-align: left;
+  }
+
+  /* Специфічні стилі для списків "Без нас/З нами" */
+  .reason {
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .reason i {
+    margin-top: 3px; /* Вирівнює іконку з текстом */
+    flex-shrink: 0; /* Запобігає стисканню іконок */
   }
 }
 
-@media (max-width: 600px) {
-  .header,
+@media (max-width: 768px) {
+  .container {
+    margin: 100px auto 20px; /* Більше місца для фіксованої навігації */
+    padding: 0 15px;
+  }
+
+  .site {
+    border-radius: 12px;
+  }
+
   .main-content {
+    padding: 0 20px;
+    gap: 25px;
+  }
+
+  .section {
     padding: 20px;
+    margin-bottom: 15px;
   }
 
-  .logo {
-    font-size: 28px;
+  h2 {
+    font-size: 1.8rem;
+    padding-bottom: 10px;
   }
 
+  h2:after {
+    width: 60px;
+    height: 3px;
+  }
+
+  /* Покращений перенос для довгого тексту */
+  .section li,
+  .reason {
+    word-break: break-word;
+    hyphens: auto;
+    line-height: 1.5;
+    padding: 12px 0;
+  }
+
+  /* Специфічні стилі для контактної інформації */
   .contact-item {
     flex-direction: column;
     align-items: flex-start;
     gap: 5px;
   }
 
-  .section {
-    padding: 20px;
+  /* Стилі для карток послуг на мобільних */
+  .service-card {
+    margin-bottom: 20px;
+  }
+
+  .service-image {
+    height: 180px;
+  }
+
+  .service-content {
+    padding: 15px;
+  }
+
+  .service-title {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  .header,
+  .main-content {
+    padding: 15px;
+  }
+
+  .logo {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .tagline {
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .navigation {
+    padding: 12px 0;
   }
 
   .navigation-list {
+    gap: 8px;
+    padding: 0 15px;
     justify-content: flex-start;
     overflow-x: auto;
     padding-bottom: 5px;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  body {
+    padding: 15px;
+    padding-top: 80px; /* Додатковий відступ для фіксованого меню */
+  }
+
+  /* Покращений перенос для особливо довгого тексту */
+  .reason,
+  .section ul li {
+    font-size: 14px;
+    line-height: 1.6;
+    hyphens: auto;
+    text-align: left;
+    padding: 10px 0;
+  }
+
+  /* Специфічні стилі для елементів з іконками */
+  .reason i {
+    margin-right: 8px;
+    font-size: 14px;
+  }
+
+  /* Стилі для блоку "Про нас" */
+  .about-section {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .about-content,
+  .about-image {
+    min-width: 100%;
+  }
+
+  .about-image {
+    height: 300px;
+    font-size: 20px;
+  }
+
+  .values-list {
+    flex-direction: column;
+  }
+
+  .value-item {
+    min-width: 100%;
+  }
+
+  /* Стилі для контактної секції */
+  .contact-info {
+    padding: 20px;
+  }
+
+  .info-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .info-item i {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navigation-list li {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .section {
+    padding: 15px;
+  }
+
+  /* Ще кращий перенос для дуже довгого тексту */
+  .reason,
+  .section ul li {
+    font-size: 13px;
+    hyphens: manual;
+    text-align: left;
+  }
+
+  /* Специфічне вирівнювання для списків */
+  .reason-list {
+    padding-left: 5px;
+  }
+
+  .service-docs li {
+    text-align: left;
+    margin-left: 0;
+    padding-left: 15px;
+  }
+
+  /* Вирівнювання для контактних даних */
+  .contacts {
+    align-items: center;
+  }
+
+  .contact-item {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* Додаткові утилітарні класи для кращого переносу */
+.text-wrap {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
+/* Фіксуємо позицію навігації на мобільних */
+@media (max-width: 768px) {
+  .navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
   }
 
   body {
     padding-top: 70px;
-  }
-
-  .review-card {
-    width: 250px;
-  }
-
-  .scroll-buttons {
-    display: none;
-  }
-
-  .contact-section {
-    flex-direction: column;
-  }
-  .contact-info,
-  .contact-form {
-    width: 100%;
   }
 }
