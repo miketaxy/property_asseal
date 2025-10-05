@@ -33,9 +33,9 @@ document.addEventListener("DOMContentLoaded", function () {
       let textToCopy = "";
 
       if (this.classList.contains("phone")) {
-        textToCopy = this.textContent.replace("Скопіювати", "").trim();
+        textToCopy = "(093) 45-19-023";
       } else if (this.classList.contains("email")) {
-        textToCopy = this.textContent.replace("Скопіювати", "").trim();
+        textToCopy = "exprertna_ocinka_maina@urk.net";
       } else if (this.classList.contains("address")) {
         textToCopy = this.querySelector("span").textContent;
       }
